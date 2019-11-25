@@ -29,19 +29,23 @@ or go to published version:
  - Y-combinator
    - In all honesty, I still have not figured out how this works in the notation found throughout the internet, but mine is `f-r`.
    - Use:
-`my-func = 
+```pyret
+my-func = 
   {(arg1): # Param: a value that persists throughout recursion; does not need to be passed back in.
     f-r({(r-my-func): 
       {(arg2): {(arg3): # Params: values which change throughout recursion; need to be re-passed in.
-        do-stuff(f-r(r-my-func)(new-arg2)(new-arg3))}}})}`
+        do-stuff(f-r(r-my-func)(new-arg2)(new-arg3))}}})}
+```
  - Name binding
    - I want to limit binding to names only to the functions themselves (if that makes any sense). In theory, these bindings in the full program (as long as none are recursive) can be written with the same technique as below.
    - For binding within functions, I use `f-bind`, which just let's me organize values. The idea of it is, for any value I want to bind to a name, I make a lambda with that name as a parameter, and call that lambda with the computed value.
    - Use:
-`my-func =
+```pyret
+my-func =
   {(arg):
     f-bind(bind-value)({(bind-name): 
-      do-stuff(bind-name)(bind-name)(bind-name)})}`
+      do-stuff(bind-name)(bind-name)(bind-name)})}
+```
  - Thunks and multi-argument functions
    - I am designing this iteration to only allow lambdas with exactly one argument.
    - Multi-argument functions are implemented with currying.
