@@ -12,6 +12,7 @@ Version x.y depends on version x.{y - 1}; Version x.0 is a full restart.
 Import Lambda Calculus 3 in code.pyret.org:
  - Base library: include shared-gdrive("Lambda Calculus 3-0.arr", "19RJbhVGiMtDB87tYmGnP9nhB9rfwE2hc")
  - Lists library: include shared-gdrive("Lambda Calculus 3-1-lists.arr", "1D6QR70U-EzI74qIwi7PuourVcEuzRUa3")
+ 
 or go to published version: 
  - Lambda Calculus 3: [https://code.pyret.org/editor#share=1AgzgWOMf287CiPbG8Tkf26gsS_QuKBci&v=8934c12](https://code.pyret.org/editor#share=1AgzgWOMf287CiPbG8Tkf26gsS_QuKBci&v=8934c12 "Lambda Calculus 3 by Thomas Del Vecchio")
  - Lambda Calculus 3.0: [https://code.pyret.org/editor#share=19RJbhVGiMtDB87tYmGnP9nhB9rfwE2hc&v=8934c12](https://code.pyret.org/editor#share=19RJbhVGiMtDB87tYmGnP9nhB9rfwE2hc&v=8934c12 "Lambda Calculus 3.0 by Thomas Del Vecchio")
