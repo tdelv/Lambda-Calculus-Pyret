@@ -23,6 +23,8 @@ or go to published version:
  - Non-pure functions:
    - `m-` means a meta-function
      - Often used for transferring between Pyret data and Lambda Calculus functions
+ - Libraries:
+   - `functype-libraryname-funcname` where `functype` is as described above.
 
 ## Strategies
 ### Lambda Calculus Things
